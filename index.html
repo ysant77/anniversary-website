@@ -9,8 +9,8 @@
 <body>
   <div class="hearts"></div>
   <header>
-    <h1>Happy 5 Months, My Patni! 🩷</h1>
-    <p>July 14, 2024</p>
+    <h1 id="anniversary-heading">Happy 5 Months, My Patni! 🩷</h1>
+    <p>July 14, 2025</p>
   </header>
   <main>
     <section class="intro">
@@ -30,6 +30,7 @@
     <p>With all my love — Yatharth 🐱🩷</p>
   </footer>
   <script>
+    // Floating Hearts Animation
     const hearts = document.querySelector(".hearts");
     setInterval(() => {
       const heart = document.createElement("div");
@@ -38,6 +39,12 @@
       hearts.appendChild(heart);
       setTimeout(() => heart.remove(), 4000);
     }, 500);
+
+    // Dynamic Months Counter
+    const startDate = new Date("2024-02-14");
+    const today = new Date();
+    const diffInMonths = (today.getFullYear() - startDate.getFullYear()) * 12 + (today.getMonth() - startDate.getMonth());
+    document.getElementById("anniversary-heading").innerHTML = `Happy ${diffInMonths} Months, My Patni! 🩷`;
   </script>
 </body>
 </html>
