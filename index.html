@@ -5,6 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yatharth ❤️ Ellis</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="20" font-size="20">❤️</text></svg>') 16 16, auto;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 500%;
+      animation: slide 20s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      20% { transform: translateX(0%); }
+      25% { transform: translateX(-100%); }
+      45% { transform: translateX(-100%); }
+      50% { transform: translateX(-200%); }
+      70% { transform: translateX(-200%); }
+      75% { transform: translateX(-300%); }
+      95% { transform: translateX(-300%); }
+      100% { transform: translateX(-400%); }
+    }
+
+    .carousel-title {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #e91e63;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
   <div class="hearts"></div>
@@ -16,6 +60,20 @@
     <section class="intro">
       <p>To the kindest, cutest girl who made my world brighter — this little corner of the web is just for you. 🐾💕</p>
     </section>
+
+    <section class="carousel-section">
+      <h2 class="carousel-title">Our Journey in Moments ✨</h2>
+      <div class="carousel">
+        <div class="slides">
+          <img src="images/memory1.jpg" alt="Memory 1" />
+          <img src="images/memory2.jpg" alt="Memory 2" />
+          <img src="images/memory3.jpg" alt="Memory 3" />
+          <img src="images/memory4.jpg" alt="Memory 4" />
+          <img src="images/memory5.jpg" alt="Memory 5" />
+        </div>
+      </div>
+    </section>
+
     <section class="gallery">
       <h2>Our Memories</h2>
       <div class="gallery-grid">
